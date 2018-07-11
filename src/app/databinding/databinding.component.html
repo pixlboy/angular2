@@ -1,0 +1,21 @@
+<ul>
+    <li>{{stringInterpolation}}</li>
+    <li>
+        Property binding - Type DOM <input type="text" [value]="value" />
+    </li>
+    <li>
+        Property binding - Type Directive <input type="text" [ngClass]="{'border-red' : addBorder()}" />
+    </li>
+    <li>
+        Property binding - Type Custom = {{result}}
+    </li>
+    <li>
+        <button (click)="onClicked()">Click Me !!</button>
+    </li>
+    <li>
+        <input [(ngModel)]="person.name" />
+    </li>
+    <li>
+        Person name : {{person.name}}
+    </li>
+</ul>

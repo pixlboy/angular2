@@ -1,3 +1,10 @@
 <h1>
-  {{title}}
+    {{title}}
+    <as-lifecycle [bindable]="amount" >
+        <p #boundContentElement>{{testOutsideContent}}</p>
+        <p>{{boundContentElement.textContent}}</p>
+    </as-lifecycle>
+    <as-other></as-other>
 </h1>
+<button (click)="onChangeValue()">Change Value</button>
+<button (click)="changeAmount()">Change Amount</button>
